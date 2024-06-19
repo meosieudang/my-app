@@ -72,7 +72,7 @@ const Game = ({
         // alert(e);
       }
     }
-    await loadImage(needle, require("../assets/Tuborg/pointer.png"));
+    await loadImage(needle, "../assets/Tuborg/pointer.png");
     const wheel = new CoreWheel({
       canvas: canvasRef.current,
       outerRadius: circleRadius,
@@ -273,7 +273,7 @@ const Game = ({
       width: sW
     }
   }, /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("img", {
-    src: require("../assets/cbvn_2024/logo.png"),
+    src: "../assets/cbvn_2024/logo.png",
     className: "h-16",
     alt: "",
     style: {
@@ -281,7 +281,7 @@ const Game = ({
       height: 140
     }
   }), /*#__PURE__*/React.createElement("img", {
-    src: require("../assets/cbvn_2024/vqmm.png"),
+    src: "../assets/cbvn_2024/vqmm.png",
     className: "h-28",
     alt: ""
   }), /*#__PURE__*/React.createElement("p", {
@@ -300,7 +300,7 @@ const Game = ({
   }, /*#__PURE__*/React.createElement("div", {
     className: "relative"
   }, /*#__PURE__*/React.createElement("img", {
-    src: require("../assets/cbvn_2024/bg_result.png"),
+    src: "../assets/cbvn_2024/bg_result.png",
     width: sW * 0.6,
     height: sW * 0.6,
     alt: ""
@@ -338,7 +338,7 @@ const Game = ({
   }))), /*#__PURE__*/React.createElement("div", {
     className: "relative flex justify-end items-center flex-col"
   }, /*#__PURE__*/React.createElement("img", {
-    src: require("../assets/CarlsbergTet/footer.png"),
+    src: "../assets/CarlsbergTet/footer.png",
     alt: "",
     className: "relative w-10/12 mt-3"
   })));

@@ -2,9 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-const CBVNLuckyDraw2024 = /*#__PURE__*/lazy(() => import("./Cbvn_2024").then(m => ({
-  default: m.CBVNLuckyDraw2024
-})));
+import { CBVNLuckyDraw2024 } from "./Cbvn_2024";
 const Load = ({
   View,
   ...props
