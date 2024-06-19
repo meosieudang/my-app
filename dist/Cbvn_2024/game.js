@@ -1,5 +1,8 @@
 import moment from "moment";
 import React, { useEffect, useRef, useState } from "react";
+import logo from "../assets/cbvn_2024/logo.png";
+import vqmm from "../assets/cbvn_2024/vqmm.png";
+import bg_result from "../assets/cbvn_2024/bg_result.png";
 import { CoreWheel } from "./WinWheel";
 let circleRadius = 170;
 let circleBtnRadius = 50;
@@ -273,7 +276,7 @@ const Game = ({
       width: sW
     }
   }, /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("img", {
-    src: "../assets/cbvn_2024/logo.png",
+    src: logo,
     className: "h-16",
     alt: "",
     style: {
@@ -281,7 +284,7 @@ const Game = ({
       height: 140
     }
   }), /*#__PURE__*/React.createElement("img", {
-    src: "../assets/cbvn_2024/vqmm.png",
+    src: vqmm,
     className: "h-28",
     alt: ""
   }), /*#__PURE__*/React.createElement("p", {
@@ -300,7 +303,7 @@ const Game = ({
   }, /*#__PURE__*/React.createElement("div", {
     className: "relative"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../assets/cbvn_2024/bg_result.png",
+    src: bg_result,
     width: sW * 0.6,
     height: sW * 0.6,
     alt: ""
@@ -313,7 +316,7 @@ const Game = ({
   }))), /*#__PURE__*/React.createElement("div", {
     className: "text-center text-[20px] uppercase font-black mt-[3vh] tracking-tight relative flex flex-col items-center"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/assets/cbvn_2024/g" + message.giftId + ".png",
+    src: "../assets/cbvn_2024/g" + message.giftId + ".png",
     alt: "",
     style: {
       width: "60%"
