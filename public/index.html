@@ -10,11 +10,24 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      id="flatsome-googlefonts-css"
+      href="fonts.googleapis.com/css?family=Montserrat%3Aregular%2Cregular%2Cregular%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9"
+      type="text/css"
+      media="all"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,8 +37,201 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Creasia Games</title>
+    <style>
+      @font-face {
+        font-family: Insignia;
+        src: url("%PUBLIC_URL%/fonts/SFUInsigniaRegular.TTF");
+      }
+
+      @font-face {
+        font-family: Gotham;
+        src: url("%PUBLIC_URL%/fonts/SVN-Gotham-Black.otf");
+      }
+
+      @font-face {
+        font-family: VINAMILK_NEW;
+        font-weight: 700;
+        font-style: normal;
+        src: url("%PUBLIC_URL%/fonts/vinamilk-new-bold.otf");
+      }
+
+      @font-face {
+        font-family: VINAMILK_NEW;
+        font-weight: 500;
+        font-style: normal;
+        src: url("%PUBLIC_URL%/fonts/vinamilk-new-regular.ttf");
+      }
+
+      @font-face {
+        font-family: VINAMILK_OLD;
+        font-weight: 700;
+        font-style: normal;
+        src: url("%PUBLIC_URL%/fonts/vinamilk-old-bold.ttf");
+      }
+
+      @font-face {
+        font-family: VINAMILK_OLD;
+        font-weight: 500;
+        font-style: normal;
+        src: url("%PUBLIC_URL%/fonts/vinamilk-old-regular.ttf");
+      }
+
+      .font-roboto {
+        font-family: "Roboto";
+      }
+
+      .font-insignia {
+        font-family: Insignia;
+      }
+
+      .font-gotham {
+        font-family: Gotham;
+      }
+
+      .tuborgTontBg {
+        background-image: url("%PUBLIC_URL%/assets/tuborg/bg-tont.png");
+      }
+
+      .tuborgBg {
+        background-image: url("%PUBLIC_URL%/assets/tuborg/bg.png");
+      }
+
+      .tuborgBg-PC {
+        background-image: url("%PUBLIC_URL%/assets/tuborg/bg-pc.png");
+      }
+
+      .thienlong-bg {
+        background-image: url("%PUBLIC_URL%/assets/thienlong/bg.png");
+      }
+
+      .carlsBergTetBg {
+        background-image: url("%PUBLIC_URL%/assets/carlsBergTet/bg.png");
+        background-position: bottom right;
+      }
+
+      .bg-comport-1 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-1.png");
+        background-position: bottom center;
+      }
+
+      .bg-comport-2 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-2.png");
+        background-position: bottom center;
+      }
+
+      .bg-comport-3 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-3.png");
+        background-position: bottom center;
+      }
+
+      .bg-comport-4 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-4.png");
+        background-position: center;
+      }
+
+      .bg-comport-5 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-5.png");
+        background-position: center;
+      }
+
+      .bg-comport-6 {
+        background-image: url("%PUBLIC_URL%/assets/COMPORT/bg-6.png");
+        background-position: center;
+      }
+
+      .bg-vqmm {
+        background-image: url("%PUBLIC_URL%/assets/VQMM_ADM/bg.png");
+        background-position: bottom center;
+      }
+      .bg-cbvn2024 {
+        background-image: url("%PUBLIC_URL%/assets/Cbvn_2024/bg.png");
+        background-position: bottom center;
+      }
+
+      .vinamilk_susu_bg {
+        background-image: url("%PUBLIC_URL%/assets/VINAMILK_SUSU/bg.png");
+        background-position: bottom center;
+        background-size: cover;
+      }
+
+      .vinamilk_susu_bg2 {
+        background-image: url("%PUBLIC_URL%/assets/VINAMILK_SUSU/bg2.png");
+        background-position: bottom center;
+        background-size: cover;
+      }
+
+      .VINAMILK-ADM-bg {
+        background-image: url("%PUBLIC_URL%/assets/VINAMILK_ADM/bg-adm.png");
+        background-position: bottom center;
+      }
+
+      .SCHNEIDER-bg1 {
+        background-image: url("%PUBLIC_URL%/assets/LUCKY_DRAW_SCHNEIDER/bg.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .SCHNEIDER-bg2 {
+        background-image: url("%PUBLIC_URL%/assets/LUCKY_DRAW_SCHNEIDER/home.jpg");
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .SCHNEIDER-box {
+        background-image: url("%PUBLIC_URL%/assets/LUCKY_DRAW_SCHNEIDER/box.png");
+        background-size: contain;
+      }
+
+      .VINAMILK-ADM-NEW *:not(input, .default, .input-rule) {
+        font-family: "VINAMILK_NEW";
+        color: #fff;
+      }
+
+      .VINAMILK-ADM-NEW .input-rule,
+      .VINAMILK-ADM-NEW input {
+        color: #000;
+      }
+
+      .VINAMILK-ADM-OLD * {
+        font-family: "VINAMILK_OLD";
+        color: #0411b7;
+      }
+
+      .UFS-bg-text {
+        font-size: 100px;
+        font-weight: bold;
+        font-style: italic;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        line-height: 72px;
+        padding: 6px 0;
+        text-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
+      }
+
+      .UFS-bg-text {
+        animation-duration: 0.1s;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .UFS-btn-bg {
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 1px;
+        color: #55260c;
+        background-image: radial-gradient(#fffe01, #f9c41e);
+        box-shadow: 0 0 25px #f9c41e;
+      }
+
+      .UFS-btn-bg:hover {
+        color: #9c5835;
+        background-image: radial-gradient(#fffe01, #f9c41e);
+        box-shadow: 0 0 30px #ffdf7e;
+      }
+    </style>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
