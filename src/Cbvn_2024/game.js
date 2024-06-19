@@ -1,5 +1,8 @@
 import moment from "moment";
 import React, { useEffect, useRef, useState } from "react";
+import logo from "../assets/cbvn_2024/logo.png";
+import vqmm from "../assets/cbvn_2024/vqmm.png";
+import bg_result from "../assets/cbvn_2024/bg_result.png";
 
 import { CoreWheel } from "./WinWheel";
 
@@ -305,12 +308,12 @@ const Game = ({
       >
         <>
           <img
-            src={"../assets/cbvn_2024/logo.png"}
+            src={logo}
             className="h-16"
             alt=""
             style={{ marginTop: -40, height: 140 }}
           />
-          <img src={"../assets/cbvn_2024/vqmm.png"} className="h-28" alt="" />
+          <img src={vqmm} className="h-28" alt="" />
           <p
             className="absolute right-2 top-1 text-xl font-roboto font-bold"
             style={{
@@ -331,12 +334,7 @@ const Game = ({
             style={{ width: sW }}
           >
             <div className="relative">
-              <img
-                src={"../assets/cbvn_2024/bg_result.png"}
-                width={sW * 0.6}
-                height={sW * 0.6}
-                alt=""
-              />
+              <img src={bg_result} width={sW * 0.6} height={sW * 0.6} alt="" />
               <div className="absolute left-1/2 -top-14 translate-y-1/2 -translate-x-1/2 w-[70%]">
                 <img
                   src={
@@ -349,7 +347,7 @@ const Game = ({
             </div>
             <div className="text-center text-[20px] uppercase font-black mt-[3vh] tracking-tight relative flex flex-col items-center">
               <img
-                src={"/assets/cbvn_2024/g" + message.giftId + ".png"}
+                src={"../assets/cbvn_2024/g" + message.giftId + ".png"}
                 alt=""
                 style={{ width: "60%" }}
               />
