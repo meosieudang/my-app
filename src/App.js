@@ -10,6 +10,7 @@ const Load = ({ View, ...props }) => (
   <Suspense fallback={<div></div>}>{View && <View {...props} />}</Suspense>
 );
 function App() {
+  return <CBVNLuckyDraw2024 />;
   return (
     <BrowserRouter>
       <Routes>
